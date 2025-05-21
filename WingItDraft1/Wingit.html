@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WingIt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2f49ff;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .cta {
+      background: #2f49ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      background: linear-gradient(to right, #2f49ff, #9340ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .search-box {
+      margin: 40px auto;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 12px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 960px;
+      font-size: 16px;
+    }
+
+    .search-box input[type="text"],
+    .search-box input[type="date"],
+    .search-box select {
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 180px;
+    }
+
+    .search-box button {
+      background-color: #2f49ff;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .destinations {
+      padding: 60px 48px;
+      background: #f9f9ff;
+    }
+
+    .destinations h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 32px;
+      color: #333;
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .destination-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      padding: 16px;
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .destination-card h3 {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">WingIt</div>
+    <nav>
+      <a href="Flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="login.html">Sign in</a>
+      <a href="signup.html" class="cta">Sign up</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Wings to Your<br>Wanderlust</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="From where?" />
+      <input type="text" placeholder="Where to?" />
+      <input type="date" />
+      <select>
+        <option>1 adult</option>
+        <option>2 adults</option>
+        <option>3 adults</option>
+      </select>
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <img src="Images\paris.jpg" alt="Paris">
+        <h3>Paris, France</h3>
+      </div>
+      <div class="destination-card">
+        <img src="Images\ny.jpg" alt="New York">
+        <h3>New York, USA</h3>
+      </div>
+      <div class="destination-card">
+        <img src="Images\tokyo.jpg" alt="Tokyo">
+        <h3>Tokyo, Japan</h3>
+      </div>
+      <div class="destination-card">
+        <img src="Images\greece.jpg" alt="Santorini">
+        <h3>Santorini, Greece</h3>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

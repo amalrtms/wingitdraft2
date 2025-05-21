@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - WingIt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-container {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .signup-container h2 {
+      margin-bottom: 16px;
+      font-size: 24px;
+      color: #1f2937;
+    }
+    .signup-container p {
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .checkbox-group label {
+      margin-bottom: 8px;
+    }
+    .signup-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #2f49ff;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 24px;
+    }
+    .or-divider {
+      text-align: center;
+      color: #9ca3af;
+      margin-bottom: 24px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background-color: white;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .social-btn img {
+      width: 20px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign up for WingIt</h2>
+    <p>WingIt is totally free to use. Sign up using your email address or phone number below to get started.</p>
+
+    <input type="text" placeholder="Email or phone number">
+    <input type="password" placeholder="Password">
+
+    <div class="checkbox-group">
+      <label><input type="checkbox"> I agree to the terms and conditions</label>
+      <label><input type="checkbox"> Send me the latest deal alerts</label>
+    </div>
+
+    <button class="signup-btn">Create account</button>
+
+    <div class="or-divider">or</div>
+
+    <button class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"> Continue with Google
+    </button>
+    <button class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple"> Continue with Apple
+    </button>
+    <button class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Continue with Facebook
+    </button>
+  </div>
+</body>
+</html>

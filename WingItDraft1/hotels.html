@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WingIt - Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2f49ff;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .cta {
+      background: #2f49ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 60px 48px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .section h2 span {
+      color: #2f49ff;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .see-all {
+      text-align: right;
+      margin-top: -40px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .see-all a {
+      color: #2f49ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .card img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">WingIt</div>
+    <nav>
+      <a href="Flights.html">Flights</a>
+      <a href="Wingit.html">Home</a>
+      <a href="login.html">Sign in</a>
+      <a href="signup.html" class="cta">Sign up</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Find <span>places to stay</span> in Paris</h2>
+    <div class="see-all"><a href="#">All ➤</a></div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="Images\Hotels\peninsula.png" alt="The Peninsula Paris">
+        <div class="card-content">
+          <h4>The Peninsula Paris</h4>
+          <p>Steps from the Arc de Triomphe. Enjoy lavish suites, a rooftop restaurant, and world-class Parisian hospitality.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\ritz.jpg" alt="The Ritz Paris">
+        <div class="card-content">
+          <h4>The Ritz Paris</h4>
+          <p>Nestled in Place Vendôme. Experience timeless elegance with opulent suites, a legendary bar, and impeccable service.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\meurice.jpg" alt="Le Meurice - Dorchester Collection">
+        <div class="card-content">
+          <h4>Le Meurice - Dorchester Collection</h4>
+          <p>Overlooking the Tuileries Garden. A palace of art and luxury, with regal interiors and a 2-star Michelin restaurant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Find <span>places to stay</span> in New York</h2>
+    <div class="see-all"><a href="#">All ➤</a></div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="Images\Hotels\westin.jpg" alt="The Westin New York">
+        <div class="card-content">
+          <h4>The Westin New York</h4>
+          <p>In the heart of Manhattan. Steps from Broadway with modern rooms, skyline views, and signature Westin comfort</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\conrad.jpg" alt="Conrad New York Downtown">
+        <div class="card-content">
+          <h4>Conrad New York Downtown</h4>
+          <p>Overlooking the Hudson River. An all-suite luxury stay near Wall Street with sleek design and rooftop views.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\fourseasons.jpg" alt="Four Seasons Hotel New York">
+        <div class="card-content">
+          <h4>Four Seasons Hotel New York</h4>
+          <p>Rising above Midtown Manhattan. Enjoy art-deco elegance, panoramic Central Park views, and world-class luxury.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Find <span>places to stay</span> in Japan</h2>
+    <div class="see-all"><a href="#">All ➤</a></div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="Images\Hotels\kaneyamaan.jpg" alt="Hotel Kaneyamaen">
+        <div class="card-content">
+          <h4>Hotel Kaneyamaen and Bessho SASA</h4>
+          <p>Located at the base of Mt. Fuji. Enjoy a private onsen bath and a multi-course kaiseki dinner.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/Hotels/flag.jpg" alt="HOTEL THE FLAG Osaka">
+        <div class="card-content">
+          <h4>HOTEL THE FLAG 水都市</h4>
+          <p>Just minutes away from Dotonbori. Near Shinsaibashi shopping street and food scene.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\9hours.jpg" alt="9 Hours Shinjuku">
+        <div class="card-content">
+          <h4>9 Hours Shinjuku</h4>
+          <p>Experience a unique capsule stay. Close to NEX train station from Narita airport.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Find <span>places to stay</span> in Santorini</h2>
+    <div class="see-all"><a href="#">All ➤</a></div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="Images\Hotels\cavo.jpg" alt="Cavo Tagoo">
+        <div class="card-content">
+          <h4>Cavo Tagoo Santorini</h4>
+          <p>Clifftop luxury in Imerovigli. Famous for infinity pools, sunset views, and ultra-modern cave-style suites.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\cove.jpg" alt="You & Me Cove Imerovigli">
+        <div class="card-content">
+          <h4>You & Me Cove Imerovigli</h4>
+          <p>Overlooking the caldera in Imerovigli. Savor sunset views from your private terrace and unwind in an infinity plunge pool.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\canaves.jpg" alt="Canaves Elefas Villas">
+        <div class="card-content">
+          <h4>Canaves Elefas Villas</h4>
+          <p>Tucked above Oia’s coastline. Private plunge pools, serene minimalism, and uninterrupted sunset views</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <h2>People in <span>Bengaluru</span> also searched for</h2>
+    <div class="see-all"><a href="#">All ➤</a></div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="Images\Hotels\dubai.jpg" alt="Dubai">
+        <div class="card-content">
+          <h4>Dubai, UAE</h4>
+          <p>An international city rich in culture.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\nairobi.jpg" alt="Nairobi">
+        <div class="card-content">
+          <h4>Nairobi, Kenya</h4>
+          <p>Dubbed the Safari Capital of the World.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images\Hotels\seoul.jpg" alt="Seoul">
+        <div class="card-content">
+          <h4>Seoul, South Korea</h4>
+          <p>This modern city is a traveler's dream.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
